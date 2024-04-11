@@ -1,38 +1,169 @@
+
 .App {
-  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  height: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align:center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align:center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 500px;
+  margin: auto;
+}
+
+input[type="text"],
+textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+textarea{
+  width: 500px;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0b39b4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #1d1960;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.Ad img {
+  width: 100%; /* Установите фиксированную ширину */
+  height: 200px; /* Установите фиксированную высоту */
+  object-fit: cover;
+}
+
+.Ad {
+  display: grid;
+  flex-direction: column;
+  width: 300px;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 80px;
+}
+
+.container {
+  width: auto;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Три колонки на одной строке */
+  grid-row-gap: 150px;
+  margin-bottom: 200px;
+}
+
+
+
+
+/* Стили для формы */
+.add-ad-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.add-ad-form button {
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.add-ad-form button:hover {
+  background-color: #45a049; /* Темно-зеленый при наведении */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* Кнопка Edit */
+.ed_btn {
+  background-color: #082e91; /* Зеленый цвет */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
 }
+
+.ed_btn:hover {
+  background-color: #050254; /* Темно-зеленый при наведении */
+}
+
+/* Кнопка Delete */
+.del_btn {
+  background-color: #da392d; /* Красный цвет */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.del_btn:hover {
+  background-color: #6c0000; /* Темно-красный при наведении */
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between; /* Распределение кнопок по всей ширине */
+  width: 100%;
+}
+.ed_btn,
+.del_btn {
+  flex: 1; /* Равномерное распределение доступного пространства между кнопками */
+}
+
